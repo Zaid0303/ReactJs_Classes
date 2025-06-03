@@ -1,5 +1,8 @@
 import logo from './logo.svg';
+import Navbarr from './navbar.jsx';
 import UncontrolledExample from './header.jsx';
+import ProductsComponent from './products.jsx';
+import DummyJSONComponent from './dummyJSON.jsx';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -20,9 +23,14 @@ function App() {
           Learn React
         </a>
       </header> */}
-
+      <Navbarr></Navbarr>
       <UncontrolledExample></UncontrolledExample>
-      <h1>Zaid</h1>
+      <h1 className='my-4'>Products</h1>
+      <ProductsComponent></ProductsComponent>
+
+      <h1 className='my-4'>DummyJSON Products</h1>
+      <DummyJSONComponent></DummyJSONComponent>
+
     </div>
   );
 }
