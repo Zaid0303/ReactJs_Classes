@@ -3,6 +3,7 @@ import Navbarr from './navbar.jsx';
 import Silder from './header.jsx';
 import ProductsComponent from './products.jsx';
 import DummyJSONComponent from './dummyJSON.jsx';
+import Currentdate from './currentDateTime.jsx';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 import img from './images/Pushpa 2.png';
@@ -46,6 +47,11 @@ function App() {
       <Silder></Silder>
       {/* --------------- */}
 
+      {/* --------------- */}
+      
+      {/* --------------- */}
+      <h1 className='my-4'>JSX Date Time</h1>
+      <Currentdate></Currentdate>
       {/* --------------- */}
       <h1 className='my-4'>Props Array Movie Cards</h1>
       <div className="movie-section py-2">
