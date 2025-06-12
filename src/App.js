@@ -4,6 +4,10 @@ import Silder from './header.jsx';
 import ProductsComponent from './products.jsx';
 import DummyJSONComponent from './dummyJSON.jsx';
 import Currentdate from './currentDateTime.jsx';
+import MyComponent from './buttonEvent.jsx';
+import Football from './buttonEvent.jsx';
+import Football2 from './buttonEvent.jsx';
+import AddHook from './stateManagement.jsx';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 import img from './images/Pushpa 2.png';
@@ -48,7 +52,10 @@ function App() {
       {/* --------------- */}
 
       {/* --------------- */}
-      
+      <AddHook></AddHook>
+      {/* <MyComponent></MyComponent> */}
+      {/* <Football></Football> */}
+      <Football2></Football2>
       {/* --------------- */}
       <h1 className='my-4'>JSX Date Time</h1>
       <Currentdate></Currentdate>
