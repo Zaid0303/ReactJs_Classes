@@ -8,6 +8,8 @@ import MyComponent from './buttonEvent.jsx';
 import Football from './buttonEvent.jsx';
 import Football2 from './buttonEvent.jsx';
 import AddHook from './stateManagement.jsx';
+import LikeButton from './stateManagement.jsx';
+import EmployeeSalary from './salary_StateManagement.jsx';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 import img from './images/Pushpa 2.png';
@@ -51,11 +53,14 @@ function App() {
       <Silder></Silder>
       {/* --------------- */}
 
+      <EmployeeSalary></EmployeeSalary>
+
       {/* --------------- */}
       <AddHook></AddHook>
       {/* <MyComponent></MyComponent> */}
       {/* <Football></Football> */}
       <Football2></Football2>
+      {/* <LikeButton></LikeButton> */}
       {/* --------------- */}
       <h1 className='my-4'>JSX Date Time</h1>
       <Currentdate></Currentdate>
