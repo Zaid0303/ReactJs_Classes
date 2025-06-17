@@ -10,6 +10,7 @@ import Football2 from './buttonEvent.jsx';
 import AddHook from './stateManagement.jsx';
 import LikeButton from './stateManagement.jsx';
 import EmployeeSalary from './salary_StateManagement.jsx';
+import Blogs from './formEvent.jsx';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 import img from './images/Pushpa 2.png';
@@ -56,6 +57,7 @@ function App() {
       <EmployeeSalary></EmployeeSalary>
 
       {/* --------------- */}
+      <Blogs></Blogs>
       <AddHook></AddHook>
       {/* <MyComponent></MyComponent> */}
       {/* <Football></Football> */}
