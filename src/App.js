@@ -12,6 +12,9 @@ import LikeButton from './stateManagement.jsx';
 import EmployeeSalary from './salary_StateManagement.jsx';
 import Blogs from './formEvent.jsx';
 import Login from './login.jsx';
+import UsersComponent from './user_API_Data.jsx';
+import MoviesComponent from './movies_API_Data.jsx';
+import ProductCounter from './useEffect.jsx';
 import { Card, Button, Container, Row, Col } from 'react-bootstrap';
 
 import img from './images/Pushpa 2.png';
@@ -55,8 +58,10 @@ function App() {
       <Silder></Silder>
       {/* --------------- */}
       <Login></Login>
+      <ProductCounter></ProductCounter>
       <EmployeeSalary></EmployeeSalary>
-
+      {/* <MoviesComponent></MoviesComponent> */}
+      <UsersComponent></UsersComponent>
       {/* --------------- */}
       <Blogs></Blogs>
       <AddHook></AddHook>
