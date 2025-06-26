@@ -1,15 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import { Card, Button, Row, Col, Container, Spinner } from 'react-bootstrap';
+import { CartContext } from './CartContext';
 
 function DummyJSONComponent() {
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(true);
+    const { addToCart } = useContext(CartContext);
 
     useEffect(() => {
         fetch("https://dummyjson.com/products")
             .then((res) => res.json())
             .then((data) => {
-                setProducts(data.products); // Array of products
+                setProducts(data.products);
                 setLoading(false);
             })
             .catch((err) => {
@@ -20,7 +22,6 @@ function DummyJSONComponent() {
 
     return (
         <Container className="mt-4">
-            <h2 className="mb-4">Latest Products</h2>
             {loading ? (
                 <div className="text-center">
                     <Spinner animation="border" role="status" />
@@ -39,7 +40,9 @@ function DummyJSONComponent() {
                                         <br />
                                         Price: Rs. {pro.price}
                                     </Card.Text>
-                                    <Button variant="primary">Buy Now</Button>
+                                    <Button variant="primary" onClick={() => addToCart(pro)}>
+                                        Add To Cart
+                                    </Button>
                                 </Card.Body>
                             </Card>
                         </Col>
